@@ -3,10 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Tests d’estudi</title>
 <style>
-:root{color-scheme:light;--bg:#f7f6f2;--card:#fff;--tx:#1d1d1b;--mu:#6b6b66;--ac:#2f6f5e;--ok:#2e7d32;--ko:#c62828;--bd:#dcdad2;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#161615;--card:#222221;--tx:#ecebe6;--mu:#a09f98;--ac:#5fb59f;--ok:#66bb6a;--ko:#ef6b6b;--bd:#3a3a38}}
-:root[data-theme="dark"]{color-scheme:dark;--bg:#161615;--card:#222221;--tx:#ecebe6;--mu:#a09f98;--ac:#5fb59f;--ok:#66bb6a;--ko:#ef6b6b;--bd:#3a3a38}
-html{scroll-padding-top:env(safe-area-inset-top,0px)}
+:root{color-scheme:light;--bg:#e9e7e1;--card:#f5f4ef;--tx:#26261f;--mu:#66655e;--ac:#2f6f5e;--ok:#2e7d32;--ko:#c62828;--bd:#cdcac0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
 main{max-width:640px;margin:0 auto;padding:20px 16px 40px}
 h1{font-size:1.5rem;margin:.2em 0 .8em}h2{font-size:1.1rem;margin:0 0 .6em}
@@ -83,7 +80,398 @@ var SUBJECTS=[{n:'IPO II',units:[
 {"id":"u5q20","q":"<p class='mu' style='margin-top:0'><b>Cas Pràctic: Facturació i Fiscalitat.</b><br>L'administratiu d'<b>InnovaTech Solutions, SL</b> ha emès la primera factura important a un nou client corporatiu, \"Logística Global, SA\", per un servei de consultoria de seguretat. La factura s'ha enviat en PDF amb el següent desglossament d'imports:<br>• <b>Base Imposable:</b> 2.000,00 €<br>• <b>IVA (21%):</b> +420,00 €<br>• <b>Retenció IRPF (15%):</b> -300,00 €<br>• <b>TOTAL A PAGAR: 2.120,00 €</b><br>L'endemà, el departament de comptabilitat del client retorna la factura amb un correu breu: <i>\"Bon dia, no podem acceptar aquesta factura per un error fiscal en l'emissor. Si us plau, rectifiqueu-la i torneu-la a enviar per procedir al pagament\"</i>.</p>Analitzant la naturalesa jurídica d'InnovaTech Solutions (Societat Limitada) i el desglossament de la factura, quin és l'error que ha motivat el rebuig?","o":["L'error és de concepte fiscal: Una Societat Limitada (SL) és subjecte passiu de l'<b>Impost de Societats</b>, no de l'IRPF. Per tant, una empresa mercantil mai ha d'incloure retenció d'IRPF en les seves factures de venda; això només ho fan els autònoms professionals.","L'error és matemàtic: la retenció de l'IRPF s'hauria de restar de la Base + IVA (2.420 €), no només de la Base Imposable. El càlcul correcte del total hauria de ser diferent.","L'error és el tipus d'IVA: els serveis tecnològics i digitals estan considerats de primera necessitat per a la transformació digital i gaudeixen d'un <b>tipus reduït del 10%</b>, per la qual cosa l'IVA de 420 € és incorrecte.","L'error és el percentatge de retenció: com que InnovaTech és una empresa de nova creació (menys de 2 anys de vida), la llei permet aplicar una retenció reduïda del <b>7%</b> en lloc del 15%, i el client vol aplicar aquest avantatge.","L'error és el destinatari: la retenció d'IRPF només s'ha d'aplicar quan el client és un particular (B2C), però com que el client és una Societat Anònima (SA), està exempt de practicar retencions a tercers."],"a":0}
 ]}
 ]},
-{n:'Aplicacions ofimàtiques',units:[]},
+
+{n:'Aplicacions ofimàtiques',units:[
+{n:"Unitat 1 - Instal·lació d'aplicacions i processadors de text",qs:[
+// --- PREGUNTA 1, UNITAT 1, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u1q1", "q": "Quina diferència hi ha entre una instal·lació en xarxa i una instal·lació local?", "o": ["La instal·lació en xarxa permet compartir el programari des d’un servidor", "No hi ha diferències funcionals", "La instal·lació local només funciona en entorns d’empresa", "La instal·lació en xarxa no necessita connexió a Internet"], "a": 0},
+
+// --- PREGUNTA 2, UNITAT 1, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u1q2", "q": "Quan s’instal·la LibreOffice en mode “silent” (sense assistent), què passa?", "o": ["Es mostra un assistent reduït amb poques opcions", "Es fa la instal·lació amb opcions per defecte sense intervenció de l’usuari", "Es requereix confirmar cada pas manualment", "Es crea una imatge ISO abans d’instal·lar"], "a": 1},
+
+// --- PREGUNTA 3, UNITAT 1, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u1q3", "q": "És necessari reiniciar OpenOffice després d'instal·lar una extensió?", "o": ["Sí, sempre.", "Depèn del tipus d'extensió.", "Només algunes vegades.", "No, mai."], "a": 0},
+
+// --- PREGUNTA 4, UNITAT 1, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u1q4", "q": "Quan s’instal·la Microsoft Office amb l’opció “Instal·lació basada en clic” (Click-to-Run), què passa?", "o": ["Només instal·la Word i Excel obligatòriament", "Es descarrega i instal·la tot el paquet abans d’usar-lo", "No necessita connexió a Internet", "Es pot començar a utilitzar mentre encara s’està descarregant"], "a": 3},
+
+// --- PREGUNTA 5, UNITAT 1, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u1q5", "q": "Quina és la principal funció d'un gestor d'extensions?", "o": ["Instalar, desinstal·lar i gestionar extensions.", "Crear extensions per a OpenOffice.", "Traduir extensions a altres idiomes.", "Buscar extensions a Internet."], "a": 0},
+
+// --- PREGUNTA 6, UNITAT 1, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u1q6", "q": "Què és una extensió a OpenOffice?", "o": ["Un fitxer de document d'OpenOffice.", "Un tipus de lletra per a OpenOffice.", "Un programa addicional que s'integra a OpenOffice.", "Una plantilla per a OpenOffice."], "a": 2},
+
+// --- PREGUNTA 7, UNITAT 1, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u1q7", "q": "On es troba el gestor d'extensions a OpenOffice?", "o": ["Edita > Gestor d'extensions", "Eines > Gestor d'extensions", "Veure > Gestor d'extensions", "Fitxer > Gestor d'extensions"], "a": 1},
+
+// --- PREGUNTA 8, UNITAT 1, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u1q8", "q": "Quin d’aquests NO és un paquet ofimàtic?", "o": ["Microsoft Office", "Apache OpenOffice", "LibreOffice", "VMware Workstation"], "a": 3, "e": "VMware Workstation és un programari de virtualització, no un paquet ofimàtic."},
+
+// --- PREGUNTA 9, UNITAT 1, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u1q9", "q": "Quan instal·lem una aplicació al núvol (cloud), què necessitem principalment?", "o": ["Connexió a Internet", "Una partició dedicada", "Un disc dur amb molta capacitat", "Un sistema operatiu Linux"], "a": 0},
+
+// --- PREGUNTA 10, UNITAT 1, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u1q10", "q": "Si una aplicació requereix permisos d’administrador per instal·lar-se, quin és el motiu principal?", "o": ["Ha de modificar fitxers i claus del sistema", "Instal·la drivers de tercers sempre", "Necessita accedir a la memòria RAM", "Evitar que l’usuari la desinstal·li"], "a": 0},
+
+// --- PREGUNTA 11, UNITAT 1, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u1q11", "q": "Quin és el nom del processador de text de LibreOffice?", "o": ["Writer", "Impress", "Calc", "Base"], "a": 0, "e": "Writer és el processador de text, Calc el full de càlcul, Impress les presentacions i Base la base de dades."},
+
+// --- PREGUNTA 12, UNITAT 1, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u1q12", "q": "Quina combinació de tecles serveix per desfer l’última acció?", "o": ["CTRL + Y", "CTRL + X", "CTRL + D", "CTRL + Z"], "a": 3, "e": "CTRL + Z desfà i CTRL + Y refà."},
+
+// --- PREGUNTA 13, UNITAT 1, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u1q13", "q": "Quina d’aquestes opcions permet guardar en format compatible amb Microsoft Word?", "o": ["Desa com i triar .docx", "Exportar imatge", "Exportar com a PDF", "Insereix → Fitxer extern"], "a": 0},
+
+// --- PREGUNTA 14, UNITAT 1, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u1q14", "q": "Quina és la diferència entre una plantilla i un estil?", "o": ["No n’hi ha cap", "Les plantilles només es poden usar a Calc", "La plantilla afecta tot el document, els estils només el format de text i paràgrafs", "Els estils només funcionen en documents .docx"], "a": 2},
+
+// --- PREGUNTA 15, UNITAT 1, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u1q15", "q": "On es poden gestionar els estils?", "o": ["Menú Fitxer → Plantilles", "Menú Eines → Opcions", "Finestra Estils i format (F11)", "Menú Taula → Disseny"], "a": 2},
+
+// --- PREGUNTA 16, UNITAT 1, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u1q16", "q": "Com podem definir que un estil de títol aparegui a l’índex automàtic?", "o": ["Activant la funció “Mostra al navegador”", "Assignant-li un nivell d’esquema (nivell 1, 2, etc.)", "Convertint-lo en text normal", "Inserint un marcador"], "a": 1},
+
+// --- PREGUNTA 17, UNITAT 1, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u1q17", "q": "Un peu de pàgina:", "o": ["No pot contenir imatges.", "Es pot configurar perquè es repeteixi automàticament a totes pàgines.", "És obligatori editar-lo en tots els documents de text.", "Totes les respostes són correctes."], "a": 1},
+
+// --- PREGUNTA 18, UNITAT 1, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u1q18", "q": "Com s’insereix un camp de data actual automàticament?", "o": ["Format → Data i hora", "Fitxer → Propietats", "Eines → Opcions → Data", "Insereix → Camps → Data"], "a": 3},
+
+// --- PREGUNTA 19, UNITAT 1, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u1q19", "q": "Hipervincles", "o": ["Han d'apuntar sempre a webs.", "No poden estar lligats a imatges.", "Es configuren des del menú Format.", "Poden apuntar cap a llocs del mateix arxiu."], "a": 3},
+
+// --- PREGUNTA 20, UNITAT 1, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u1q20", "q": "Índex automàtics", "o": ["Totes les respostes són correctes.", "taules.", "continguts.", "figures."], "a": 0, "e": "Writer pot generar índexs de continguts, de taules, de figures i d'altres elements."}
+]},
+
+{n:"Unitat 2 - Fulls de càlcul i ús de bases de dades",qs:[
+// --- PREGUNTA 1, UNITAT 2, APLICACIONS OFIMÀTIQUES ---
+{
+ "id": "ao-u2q1",
+ "q": "Quina funció s'utilitza per calcular la suma d'un conjunt de valors a Calc?",
+ "o": [
+  "SUMA",
+  "SUM",
+  "TOTAL",
+  "AFEGIR"
+ ],
+ "a": 0,
+ "e": "A Calc en català la funció es diu SUMA."
+},
+
+// --- PREGUNTA 2, UNITAT 2, APLICACIONS OFIMÀTIQUES ---
+{
+ "id": "ao-u2q2",
+ "q": "Com podem inserir una validació de dades (per exemple, només números)?",
+ "o": [
+  "Format → Condicions",
+  "Eines → Contingut automàtic",
+  "Dades → Validació",
+  "Eines → Opcions"
+ ],
+ "a": 2
+},
+
+// --- PREGUNTA 3, UNITAT 2, APLICACIONS OFIMÀTIQUES ---
+{
+ "id": "ao-u2q3",
+ "q": "Com podem aplicar format monetari a una cel·la?",
+ "o": [
+  "Eines → Opcions",
+  "Insereix → Format",
+  "Fitxer → Propietats",
+  "Format → Cel·les → Nombre → Moneda"
+ ],
+ "a": 3
+},
+
+// --- PREGUNTA 4, UNITAT 2, APLICACIONS OFIMÀTIQUES ---
+{
+ "id": "ao-u2q4",
+ "q": "Quina és la diferència entre una fila i una columna?",
+ "o": [
+  "Les dues són verticals",
+  "La fila és horitzontal i la columna vertical",
+  "La fila és vertical i la columna horitzontal",
+  "Les dues són horitzontals"
+ ],
+ "a": 1
+},
+
+// --- PREGUNTA 5, UNITAT 2, APLICACIONS OFIMÀTIQUES ---
+{
+ "id": "ao-u2q5",
+ "q": "Com podem crear una plantilla pròpia a Calc?",
+ "o": [
+  "Guardar com .ods",
+  "Exportar com PDF",
+  "Guardar com .ots i desar-la al gestor de plantilles",
+  "Guardar com .ott"
+ ],
+ "a": 2
+},
+
+// --- PREGUNTA 6, UNITAT 2, APLICACIONS OFIMÀTIQUES ---
+{
+ "id": "ao-u2q6",
+ "q": "Quina fórmula s’utilitza per sumar les cel·les A1 i A2?",
+ "o": [
+  "SUMA(A1:A2)",
+  "ADD(A1,A2)",
+  "TOTAL(A1:A2)",
+  "SOMA(A1:A2)"
+ ],
+ "a": 0
+},
+
+// --- PREGUNTA 7, UNITAT 2, APLICACIONS OFIMÀTIQUES ---
+{
+ "id": "ao-u2q7",
+ "q": "Quina extensió tenen els fitxers creats amb LibreOffice Calc per defecte?",
+ "o": [
+  ".ods",
+  ".odt",
+  ".xls",
+  ".csv"
+ ],
+ "a": 0,
+ "e": ".ods és el full de càlcul d'OpenDocument; .odt és el de text."
+},
+
+// --- PREGUNTA 8, UNITAT 2, APLICACIONS OFIMÀTIQUES ---
+{
+ "id": "ao-u2q8",
+ "q": "Quin tipus de dades es poden introduir a les cel·les de Calc?",
+ "o": [
+  "Només dates i hores.",
+  "Només números i text.",
+  "Text, números, dates i hores.",
+  "Només fórmules i funcions."
+ ],
+ "a": 2
+},
+
+// --- PREGUNTA 9, UNITAT 2, APLICACIONS OFIMÀTIQUES ---
+{
+ "id": "ao-u2q9",
+ "q": "Quin avantatge té usar estils de cel·la en comptes de format manual?",
+ "o": [
+  "Menys consum de memòria",
+  "Permet aplicar i modificar formats de manera coherent i ràpida",
+  "Crea macros per defecte",
+  "Obliga a fer còpies automàtiques"
+ ],
+ "a": 1
+},
+
+// --- PREGUNTA 10, UNITAT 2, APLICACIONS OFIMÀTIQUES ---
+{
+ "id": "ao-u2q10",
+ "q": "Quin és l’ús principal d’una macro a Calc?",
+ "o": [
+  "Automatitzar tasques repetitives",
+  "Fer que el document sigui més lleuger",
+  "Augmentar la seguretat",
+  "Crear gràfics més ràpid"
+ ],
+ "a": 0
+},
+
+// --- PREGUNTA 11, UNITAT 2, APLICACIONS OFIMÀTIQUES ---
+{
+ "id": "ao-u2q11",
+ "q": "Què és una relació \"un a molts\" en el context de bases de dades?",
+ "o": [
+  "No hi ha cap relació entre les taules.",
+  "Un registre d'una taula es relaciona amb un sol registre d'una altra taula.",
+  "Molts registres d'una taula es relacionen amb molts registres d'una altra taula.",
+  "Un registre d'una taula es relaciona amb molts registres d'una altra taula."
+ ],
+ "a": 3
+},
+
+// --- PREGUNTA 12, UNITAT 2, APLICACIONS OFIMÀTIQUES ---
+{
+ "id": "ao-u2q12",
+ "q": "Què és un informe a Base?",
+ "o": [
+  "Una consulta avançada",
+  "Una presentació de les dades d’una manera organitzada per imprimir o visualitzar",
+  "Un formulari",
+  "Una taula de full de càlcul"
+ ],
+ "a": 1
+},
+
+// --- PREGUNTA 13, UNITAT 2, APLICACIONS OFIMÀTIQUES ---
+{
+ "id": "ao-u2q13",
+ "q": "Quin tipus de control es pot posar en un formulari per introduir només dates?",
+ "o": [
+  "Casella de text normal",
+  "Quadre de llista",
+  "Botó de comanda",
+  "Selector de data (Date Picker)"
+ ],
+ "a": 3
+},
+
+// --- PREGUNTA 14, UNITAT 2, APLICACIONS OFIMÀTIQUES ---
+{
+ "id": "ao-u2q14",
+ "q": "Quina és la diferència entre una consulta simple i una consulta SQL?",
+ "o": [
+  "No hi ha diferència",
+  "La consulta simple s’utilitza amb assistent; la SQL permet escriure instruccions SQL directament",
+  "La SQL només funciona amb formularis",
+  "La simple només funciona amb informes"
+ ],
+ "a": 1
+},
+
+// --- PREGUNTA 15, UNITAT 2, APLICACIONS OFIMÀTIQUES ---
+{
+ "id": "ao-u2q15",
+ "q": "Quin és el programa de bases de dades de LibreOffice?",
+ "o": [
+  "Calc",
+  "Impress",
+  "Base",
+  "Writer"
+ ],
+ "a": 2,
+ "e": "Calc és el full de càlcul, Impress les presentacions i Writer el processador de text."
+},
+
+// --- PREGUNTA 16, UNITAT 2, APLICACIONS OFIMÀTIQUES ---
+{
+ "id": "ao-u2q16",
+ "q": "Què és la normalització en bases de dades?",
+ "o": [
+  "Un procés per a crear còpies de seguretat de la base de dades.",
+  "Un procés per a indexar les dades i millorar la velocitat de les consultes.",
+  "Un procés per a eliminar dades redundants i millorar la integritat de les dades.",
+  "Un procés per a xifrar les dades i protegir-les d'accessos no autoritzats."
+ ],
+ "a": 2
+},
+
+// --- PREGUNTA 17, UNITAT 2, APLICACIONS OFIMÀTIQUES ---
+{
+ "id": "ao-u2q17",
+ "q": "Com podem ordenar els registres d’una consulta per un camp específic?",
+ "o": [
+  "Dades → Ordena",
+  "Insereix → Consulta",
+  "Format → Ordena",
+  "Formulari → Ordena"
+ ],
+ "a": 0
+},
+
+// --- PREGUNTA 18, UNITAT 2, APLICACIONS OFIMÀTIQUES ---
+{
+ "id": "ao-u2q18",
+ "q": "Quina estructura ens permet generar automàticament documents per a cada registre?",
+ "o": [
+  "Gràfic",
+  "Consulta",
+  "Formulari",
+  "Informe"
+ ],
+ "a": 3
+},
+
+// --- PREGUNTA 19, UNITAT 2, APLICACIONS OFIMÀTIQUES ---
+{
+ "id": "ao-u2q19",
+ "q": "Quina estructura principal conté una base de dades?",
+ "o": [
+  "Imatges i textos",
+  "Taules, consultes, formularis i informes",
+  "Diagrames i gràfics",
+  "Llibres i fulls"
+ ],
+ "a": 1
+},
+
+// --- PREGUNTA 20, UNITAT 2, APLICACIONS OFIMÀTIQUES ---
+{
+ "id": "ao-u2q20",
+ "q": "Què permet fer una consulta?",
+ "o": [
+  "Seleccionar, filtrar i combinar dades de taules",
+  "Desar el document com a PDF",
+  "Aplicar estils de text",
+  "Crear un gràfic circular"
+ ],
+ "a": 0
+}
+]},
+
+{n:"Unitat 3 - Manipulació d'imatges i vídeo",qs:[
+// --- PREGUNTA 1, UNITAT 3, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u3q1", "q": "Què és un filtre d’imatge?", "o": ["Un format d’imatge especial", "Un efecte que modifica colors, contrast o tonalitat", "Una manera de comprimir la imatge", "Una eina per inserir text"], "a": 1},
+
+// --- PREGUNTA 2, UNITAT 3, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u3q2", "q": "Com podem inserir una imatge a un document de Writer?", "o": ["Insereix → Taula", "Eines → Opcions", "Insereix → Imatge → Des de fitxer", "Format → Imatge"], "a": 2},
+
+// --- PREGUNTA 3, UNITAT 3, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u3q3", "q": "Què permet fer la funció “Agrupar” amb diverses imatges o objectes?", "o": ["Generar un PDF", "Crear una sola imatge amb tots els objectes seleccionats per moure o modificar conjuntament", "Fusionar colors automàticament", "No té cap efecte"], "a": 1},
+
+// --- PREGUNTA 4, UNITAT 3, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u3q4", "q": "Quina diferència hi ha entre imatges raster i vector?", "o": ["Les raster estan formades per píxels, les vector per formes i línies matemàtiques", "Cap diferència", "Les vector depenen de píxels i les raster de fórmules", "Les raster són escalables sense perdre qualitat"], "a": 0},
+
+// --- PREGUNTA 5, UNITAT 3, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u3q5", "q": "Com podem canviar la mida d’una imatge després d’inserir-la?", "o": ["No es pot canviar la mida", "Arrossegant les vores o cantonades", "Convertint-la en taula", "Amb el teclat només"], "a": 1},
+
+// --- PREGUNTA 6, UNITAT 3, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u3q6", "q": "Quina és la diferència entre “Enllaçar a fitxer” i “Incrustar” una imatge?", "o": ["No hi ha diferència", "Incrustar fa que la imatge formi part del document; enllaçar només mostra la imatge externa", "Incrustar només funciona amb PNG", "Enllaçar sempre redimensiona la imatge"], "a": 1},
+
+// --- PREGUNTA 7, UNITAT 3, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u3q7", "q": "Quin format d’imatge és vectorial i escalable sense perdre qualitat?", "o": ["GIF", "SVG", "JPG", "PNG"], "a": 1, "e": "SVG és un format vectorial escalable; GIF, JPG i PNG són formats de mapa de bits (ràster)."},
+
+// --- PREGUNTA 8, UNITAT 3, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u3q8", "q": "Què podem fer amb l’opció “Ajustar color”?", "o": ["Canviar la mida", "Inserir imatges addicionals", "Retallar la imatge", "Modificar brillantor, contrast i saturació"], "a": 3},
+
+// --- PREGUNTA 9, UNITAT 3, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u3q9", "q": "Quin programari és més utilitzat per a l’edició professional d’imatges?", "o": ["Inkscape", "Photoshop", "Paint", "GIMP"], "a": 1},
+
+// --- PREGUNTA 10, UNITAT 3, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u3q10", "q": "Quin format és millor per imatges amb transparència?", "o": ["JPG", "TIFF", "BMP", "PNG"], "a": 3, "e": "PNG admet canal alfa amb transparència sense pèrdua de qualitat."},
+
+// --- PREGUNTA 11, UNITAT 3, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u3q11", "q": "Com podem inserir un vídeo en una diapositiva de Impress?", "o": ["Insereix → Pel·lícula o so → Des de fitxer", "Insereix → Taula", "Format → Vídeo", "Eines → Opcions"], "a": 0},
+
+// --- PREGUNTA 12, UNITAT 3, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u3q12", "q": "Quin és el format de vídeo més comú utilitzat per a vídeos a Internet?", "o": ["MKV", "AVI", "MOV", "MP4"], "a": 3},
+
+// --- PREGUNTA 13, UNITAT 3, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u3q13", "q": "Què és un còdec de vídeo?", "o": ["Un dispositiu per capturar vídeos", "Un format de vídeo", "Un programa per reproduir vídeos", "Un algorisme per comprimir i descomprimir vídeos"], "a": 3},
+
+// --- PREGUNTA 14, UNITAT 3, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u3q14", "q": "Què permet ajustar el volum d’un vídeo?", "o": ["Insereix → Ajustar color", "Format → Mida", "Les propietats del vídeo dins Impress", "Eines → Opcions"], "a": 2},
+
+// --- PREGUNTA 15, UNITAT 3, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u3q15", "q": "Quin programa de LibreOffice permet inserir vídeos en presentacions?", "o": ["Writer", "Base", "Impress", "Calc"], "a": 2},
+
+// --- PREGUNTA 16, UNITAT 3, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u3q16", "q": "Quin programari és més utilitzat per a l’edició professional de vídeos?", "o": ["iMovie", "Adobe Premiere Pro", "Windows Movie Maker", "VLC"], "a": 1},
+
+// --- PREGUNTA 17, UNITAT 3, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u3q17", "q": "Què significa “Trucar al reproductor extern”?", "o": ["Reproduir automàticament dins de Impress", "Convertir el vídeo a GIF", "Exportar-lo a PDF", "Obrir el vídeo amb un programa extern si Impress no el pot reproduir"], "a": 3},
+
+// --- PREGUNTA 18, UNITAT 3, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u3q18", "q": "Què és recomanable fer amb els vídeos grans abans d’inserir-los a una presentació?", "o": ["Només utilitzar vídeos de més de 1 GB", "Comprimir-los i assegurar compatibilitat amb el reproductor de LibreOffice", "Inserir-los sense canviar res", "Conservar sempre el format BMP"], "a": 1},
+
+// --- PREGUNTA 19, UNITAT 3, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u3q19", "q": "Què és recomanable per optimitzar un vídeo per a presentacions grans?", "o": ["Augmentar la resolució al màxim", "Convertir a GIF", "Reduir resolució i comprimir-lo sense perdre qualitat notable", "Inserir molts vídeos alhora sense compressió"], "a": 2},
+
+// --- PREGUNTA 20, UNITAT 3, APLICACIONS OFIMÀTIQUES ---
+{"id": "ao-u3q20", "q": "Què és recomanable abans d'inserir un vídeo en Impress?", "o": ["Reduir-lo a JPG", "Que tingui la mida i format compatibles i que estigui optimitzat per a la presentació", "Inserir-lo directament sense comprovar el format", "Convertir-lo a imatge"], "a": 1}
+
+]}
+]},
 {n:'Xarxes locals',units:[
 {n:"Unitat 1 · Introducció a les xarxes locals i al cablejat estructurat",qs:[{"id": "xl-u1q1", "q": "El resultat del ràpid progrés tecnològic ...", "o": ["Totes les respostes són certes", "és degut a les diferències entre la recollida, transport, emmagatzematge i processament de la informació, que estan desapareixent ràpidament", "ha fet que s'incrementi l'ús de les xarxes en gairebé tots els àmbits", "és degut a la disminució del preu del maquinari"], "a": 0}, {"id": "xl-u1q2", "q": "Respecte les xarxes locals sense fils", "o": ["Les xarxes WLAN ofereixen cobertura a més superfície que les WMAN", "PAN només comunica terminals en entorns punt a punt", "Les xarxes PAN ofereixen cobertura a més superfície que les WLAN", "WLAN només comunica terminals en entorns punt a punt"], "a": 1}, {"id": "xl-u1q3", "q": "Respecte els dispositius de xarxa", "o": ["Els repetidors i ponts sempre tenen més de dues interfícies de xarxa", "Els repetidors i ponts tenen dues interfícies de xarxa", "Els repetidors i ponts construïxen enllaços de dades i necessiten tenir almenys dues interfícies de xarxa", "Els encaminadors sempre tenen més de dues interfícies de xarxa"], "a": 1}, {"id": "xl-u1q4", "q": "La topologia física", "o": ["En estrella utilitza enllaços punt a punt", "En bus utilitza enllaços multipunt", "Totes les respostes són certes", "En malla utilitza enllaços punt a punt"], "a": 2}, {"id": "xl-u1q5", "q": "Cada capa d'una arquitectura de xarxa", "o": ["Totes les respostes són certes", "És independent de la resta de capes", "Només veu els serveis que li ofereix la capa superior", "Ofereix serveis a la capa inferior"], "a": 1}, {"id": "xl-u1q6", "q": "En el model TCP/IP", "o": ["El protocol TCP utilitza serveis orientats a connexió", "Totes les respostes són certes", "El protocol IP utilitza serveis no orientats a connexió", "El protocol UDP utilitza serveis no orientats a connexió"], "a": 1}, {"id": "xl-u1q7", "q": "En els models o arquitectures de xarxa principals", "o": ["La primera capa és la més propera a l'usuari", "Les capes més externes (primera i última) requereixen més protocols que les internes", "Les capes baixes s'associen al programari", "Les capes altes s'associen al maquinari i a la transmissió de dades"], "a": 1}, {"id": "xl-u1q8", "q": "Respecte l'adreçament", "o": ["Qualsevol dispositiu de xarxa necessita com a mínim una adreça IP", "Totes les respostes són certes", "Un ordinador té una adreça IP i no pot estar repetida en alguna altra xarxa local", "Cada interfície de xarxa Ethernet té una adreça MAC única al món"], "a": 3}, {"id": "xl-u1q9", "q": "La capçalera de la trama d'enllaç (preàmbul-SFD) en el protocol Ethernet", "o": ["No conté les adreces IP de l'emissor i del receptor", "Conté camps per les adreces MAC del dispositiu origen i del destinatari", "Conté un camp que permet detectar errors"], "a": [0, 1, 2], "m": 1}, {"id": "xl-u1q10", "q": "Quan s'utilitza tecnologia sense fils de la norma 802.11", "o": ["Sempre cal disposar d'un dispositiu punt d'accés", "Està garantit que qualsevol dispositiu serà compatible amb la resta", "Està garantit que qualsevol dispositiu treballa a la mateixa freqüència de 2,4GHz", "L'amplada de banda d'un dispositiu dependrà de la revisió de la norma a la qual treballa"], "a": 3}, {"id": "xl-u1q11", "q": "Activitat d’aparellament", "h": "<p>Escolliu, de la llista desplegable, el terme que millor s’adapta a cada definició:</p><table><tr><td>Nom comú de les normes que van originar els estàndards IEEE 802.3</td><td>{{0}}</td></tr><tr><td>Límit màxim teòric de dades que es poden transmetre en un medi per unitat de temps.</td><td>{{1}}</td></tr><tr><td>Dispositiu electrònic que fa d'intermediari (comunica) un dispositiu d'usuari final amb el medi de xarxa.</td><td>{{2}}</td></tr><tr><td>Es diu de la una transmissió quan els senyals poden ser transmesos en tots dos sentits simultàniament.</td><td>{{3}}</td></tr><tr><td>Identificador o adreça de nivell d'enllaç.</td><td>{{4}}</td></tr><tr><td>Mesura de la pèrdua de senyal d'una transmissió des d'un origen al receptor.</td><td>{{5}}</td></tr><tr><td>És el dispositiu d'usuari final que proveeix i utilitza serveis de xarxa.</td><td>{{6}}</td></tr><tr><td>Conjunt de regles establertes que defineixen com s'envia informació mitjançant un canal de comunicació.</td><td>{{7}}</td></tr><tr><td>Xarxa que s'estén per una zona geogràfica que pot abastar continents.</td><td>{{8}}</td></tr><tr><td>Suport físic a través del qual un/s emissor/s i un/s receptor/s es poden comunicar.</td><td>{{9}}</td></tr><tr><td>Descriu la manera com es connecten física o lògicament els diferents dispositius d'una xarxa.</td><td>{{10}}</td></tr><tr><td>Model de referència de xarxes establert per l'organització ISO.</td><td>{{11}}</td></tr><tr><td>Sistema de difusió que envia la informació només a un subgrup de tots els membres de la xarxa.</td><td>{{12}}</td></tr></table>", "p": [{"k": "s", "o": ["Adreça IP", "WiMax.", "Amplada de banda.", "OSI", "Broadcast", "Protocols de comunicacions.", "NIC", "Ordinador", "Port", "Simplex", "Dúplex (o full-duplex)", "Half-Duplex", "Host", "Element de xarxa", "Medi de transmissió", "Unicast", "Adreça MAC.", "Triplex", "Fast-Ethernet", "Multicast", "Velocitat de transmissió", "Ethernet", "Wifi", "Topologia de Xarxa.", "WAN", "Jitter", "Atenuació.", "Wireless"], "a": 21}, {"k": "s", "o": ["Adreça IP", "WiMax.", "Amplada de banda.", "OSI", "Broadcast", "Protocols de comunicacions.", "NIC", "Ordinador", "Port", "Simplex", "Dúplex (o full-duplex)", "Half-Duplex", "Host", "Element de xarxa", "Medi de transmissió", "Unicast", "Adreça MAC.", "Triplex", "Fast-Ethernet", "Multicast", "Velocitat de transmissió", "Ethernet", "Wifi", "Topologia de Xarxa.", "WAN", "Jitter", "Atenuació.", "Wireless"], "a": 2}, {"k": "s", "o": ["Adreça IP", "WiMax.", "Amplada de banda.", "OSI", "Broadcast", "Protocols de comunicacions.", "NIC", "Ordinador", "Port", "Simplex", "Dúplex (o full-duplex)", "Half-Duplex", "Host", "Element de xarxa", "Medi de transmissió", "Unicast", "Adreça MAC.", "Triplex", "Fast-Ethernet", "Multicast", "Velocitat de transmissió", "Ethernet", "Wifi", "Topologia de Xarxa.", "WAN", "Jitter", "Atenuació.", "Wireless"], "a": 6}, {"k": "s", "o": ["Adreça IP", "WiMax.", "Amplada de banda.", "OSI", "Broadcast", "Protocols de comunicacions.", "NIC", "Ordinador", "Port", "Simplex", "Dúplex (o full-duplex)", "Half-Duplex", "Host", "Element de xarxa", "Medi de transmissió", "Unicast", "Adreça MAC.", "Triplex", "Fast-Ethernet", "Multicast", "Velocitat de transmissió", "Ethernet", "Wifi", "Topologia de Xarxa.", "WAN", "Jitter", "Atenuació.", "Wireless"], "a": 10}, {"k": "s", "o": ["Adreça IP", "WiMax.", "Amplada de banda.", "OSI", "Broadcast", "Protocols de comunicacions.", "NIC", "Ordinador", "Port", "Simplex", "Dúplex (o full-duplex)", "Half-Duplex", "Host", "Element de xarxa", "Medi de transmissió", "Unicast", "Adreça MAC.", "Triplex", "Fast-Ethernet", "Multicast", "Velocitat de transmissió", "Ethernet", "Wifi", "Topologia de Xarxa.", "WAN", "Jitter", "Atenuació.", "Wireless"], "a": 16}, {"k": "s", "o": ["Adreça IP", "WiMax.", "Amplada de banda.", "OSI", "Broadcast", "Protocols de comunicacions.", "NIC", "Ordinador", "Port", "Simplex", "Dúplex (o full-duplex)", "Half-Duplex", "Host", "Element de xarxa", "Medi de transmissió", "Unicast", "Adreça MAC.", "Triplex", "Fast-Ethernet", "Multicast", "Velocitat de transmissió", "Ethernet", "Wifi", "Topologia de Xarxa.", "WAN", "Jitter", "Atenuació.", "Wireless"], "a": 26}, {"k": "s", "o": ["Adreça IP", "WiMax.", "Amplada de banda.", "OSI", "Broadcast", "Protocols de comunicacions.", "NIC", "Ordinador", "Port", "Simplex", "Dúplex (o full-duplex)", "Half-Duplex", "Host", "Element de xarxa", "Medi de transmissió", "Unicast", "Adreça MAC.", "Triplex", "Fast-Ethernet", "Multicast", "Velocitat de transmissió", "Ethernet", "Wifi", "Topologia de Xarxa.", "WAN", "Jitter", "Atenuació.", "Wireless"], "a": 12}, {"k": "s", "o": ["Adreça IP", "WiMax.", "Amplada de banda.", "OSI", "Broadcast", "Protocols de comunicacions.", "NIC", "Ordinador", "Port", "Simplex", "Dúplex (o full-duplex)", "Half-Duplex", "Host", "Element de xarxa", "Medi de transmissió", "Unicast", "Adreça MAC.", "Triplex", "Fast-Ethernet", "Multicast", "Velocitat de transmissió", "Ethernet", "Wifi", "Topologia de Xarxa.", "WAN", "Jitter", "Atenuació.", "Wireless"], "a": 5}, {"k": "s", "o": ["Adreça IP", "WiMax.", "Amplada de banda.", "OSI", "Broadcast", "Protocols de comunicacions.", "NIC", "Ordinador", "Port", "Simplex", "Dúplex (o full-duplex)", "Half-Duplex", "Host", "Element de xarxa", "Medi de transmissió", "Unicast", "Adreça MAC.", "Triplex", "Fast-Ethernet", "Multicast", "Velocitat de transmissió", "Ethernet", "Wifi", "Topologia de Xarxa.", "WAN", "Jitter", "Atenuació.", "Wireless"], "a": 24}, {"k": "s", "o": ["Adreça IP", "WiMax.", "Amplada de banda.", "OSI", "Broadcast", "Protocols de comunicacions.", "NIC", "Ordinador", "Port", "Simplex", "Dúplex (o full-duplex)", "Half-Duplex", "Host", "Element de xarxa", "Medi de transmissió", "Unicast", "Adreça MAC.", "Triplex", "Fast-Ethernet", "Multicast", "Velocitat de transmissió", "Ethernet", "Wifi", "Topologia de Xarxa.", "WAN", "Jitter", "Atenuació.", "Wireless"], "a": 14}, {"k": "s", "o": ["Adreça IP", "WiMax.", "Amplada de banda.", "OSI", "Broadcast", "Protocols de comunicacions.", "NIC", "Ordinador", "Port", "Simplex", "Dúplex (o full-duplex)", "Half-Duplex", "Host", "Element de xarxa", "Medi de transmissió", "Unicast", "Adreça MAC.", "Triplex", "Fast-Ethernet", "Multicast", "Velocitat de transmissió", "Ethernet", "Wifi", "Topologia de Xarxa.", "WAN", "Jitter", "Atenuació.", "Wireless"], "a": 23}, {"k": "s", "o": ["Adreça IP", "WiMax.", "Amplada de banda.", "OSI", "Broadcast", "Protocols de comunicacions.", "NIC", "Ordinador", "Port", "Simplex", "Dúplex (o full-duplex)", "Half-Duplex", "Host", "Element de xarxa", "Medi de transmissió", "Unicast", "Adreça MAC.", "Triplex", "Fast-Ethernet", "Multicast", "Velocitat de transmissió", "Ethernet", "Wifi", "Topologia de Xarxa.", "WAN", "Jitter", "Atenuació.", "Wireless"], "a": 3}, {"k": "s", "o": ["Adreça IP", "WiMax.", "Amplada de banda.", "OSI", "Broadcast", "Protocols de comunicacions.", "NIC", "Ordinador", "Port", "Simplex", "Dúplex (o full-duplex)", "Half-Duplex", "Host", "Element de xarxa", "Medi de transmissió", "Unicast", "Adreça MAC.", "Triplex", "Fast-Ethernet", "Multicast", "Velocitat de transmissió", "Ethernet", "Wifi", "Topologia de Xarxa.", "WAN", "Jitter", "Atenuació.", "Wireless"], "a": 19}]}, {"id": "xl-u1q12", "q": "Dispositius de xarxa", "h": "\n<p>Observeu les imatges de les icones que representen dispositius de xarxa (segons fa servir Cisco a l'eina Packet Tracer) i seleccioneu el seu nom en català i anglès, dels possibles que trobareu als desplegables associats.</p>\n\n<table>\n<tbody>\n<tr>\n<td><strong>Imatge de l'element</strong></td>\n<td><strong>Nom en català</strong></td>\n<td><strong>Nom en anglès</strong></td>\n</tr>\n<tr>\n<td><strong></strong><strong><img class=\"qi\" alt=\"hub.png\" src=\"data:image/png;base64,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\"></strong></td>\n<td>{{0}}</td>\n<td>{{1}}</td>\n</tr>\n<tr>\n<td><strong><img class=\"qi\" alt=\"switch.png\" src=\"data:image/png;base64,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\"></strong></td>\n<td>{{2}}</td>\n<td>{{3}}</td>\n</tr>\n<tr>\n<td><strong><img class=\"qi\" alt=\"router.png\" src=\"data:image/png;base64,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\"></strong></td>\n<td>{{4}}</td>\n<td>{{5}}</td>\n</tr>\n<tr>\n<td><strong><img class=\"qi\" alt=\"bridge.png\" src=\"data:image/png;base64,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\"></strong></td>\n<td>{{6}}</td>\n<td>{{7}}</td>\n</tr>\n</tbody>\n</table>", "p": [{"k": "s", "o": ["Concentrador", "Modem", "Modulador", "Repetidor", "Pont", "Commutador", "Encaminador", "Modem ADSL"], "a": 0}, {"k": "s", "o": ["Hub", "Bridge", "Switch", "Router", "Modem", "Repeater", "Router Broadband"], "a": 0}, {"k": "s", "o": ["Concentrador", "Modem", "Modulador", "Repetidor", "Pont", "Commutador", "Encaminador", "Modem ADSL"], "a": 5}, {"k": "s", "o": ["Hub", "Bridge", "Switch", "Router", "Modem", "Repeater", "Router Broadband"], "a": 2}, {"k": "s", "o": ["Concentrador", "Modem", "Modulador", "Repetidor", "Pont", "Commutador", "Encaminador", "Modem ADSL"], "a": 6}, {"k": "s", "o": ["Hub", "Bridge", "Switch", "Router", "Modem", "Repeater", "Router Broadband"], "a": 3}, {"k": "s", "o": ["Concentrador", "Modem", "Modulador", "Repetidor", "Pont", "Commutador", "Encaminador", "Modem ADSL"], "a": 4}, {"k": "s", "o": ["Hub", "Bridge", "Switch", "Router", "Modem", "Repeater", "Router Broadband"], "a": 1}]}, {"id": "xl-u1q13", "q": "Classificació del cablejat Ethernet", "h": "<p>Ompliu la taula següent amb les dades corresponents a les diferents normes Ethernet:</p>\n<table>\n<tbody>\n<tr>\n<td></td>\n<td><strong>Tipus de cable</strong></td>\n<td><strong>Connector</strong></td>\n<td><strong>Long Màxima de l'enllaç o segment (en metres)<br /></strong></td>\n<td><strong>Velocitat de transmissió en Mbps<br /></strong></td>\n</tr>\n<tr>\n<td><strong>10Base2</strong></td>\n<td>{{0}}</td>\n<td>{{1}}</td>\n<td>{{2}}</td>\n<td>{{3}}</td>\n</tr>\n<tr>\n<td><strong>100Base-Tx</strong></td>\n<td>{{4}}</td>\n<td>{{5}}</td>\n<td>{{6}}</td>\n<td>{{7}}</td>\n</tr>\n<tr>\n<td><strong>1000Base-T</strong></td>\n<td>{{8}}</td>\n<td>{{9}}</td>\n<td>{{10}}</td>\n<td>{{11}}</td>\n</tr>\n<tr>\n<td><strong>1000Base-SX</strong></td>\n<td>{{12}}</td>\n<td>{{13}}</td>\n<td>{{14}}</td>\n<td>{{15}}</td>\n</tr>\n</tbody>\n</table>", "p": [{"k": "s", "o": ["Coure Coaxial (fi)", "Coure Coaxial (ample)", "Coure Trenat (UTP cat 5 min)", "Coure Trenat (UTP cat 6 min)", "Fibra multimode", "Fibra monomode"], "a": 0}, {"k": "s", "o": ["BNC", "RJ-45", "RJ-11", "SC suscriber", "USB", "Antena"], "a": 0}, {"k": "t", "a": ["185"]}, {"k": "t", "a": ["10"]}, {"k": "s", "o": ["Coure Coaxial (fi)", "Coure Coaxial (ample)", "Coure Trenat (UTP cat 5 min)", "Coure Trenat (UTP cat 6 min)", "Fibra multimode", "Fibra monomode"], "a": 2}, {"k": "s", "o": ["BNC", "RJ-45", "RJ-11", "SC suscriber", "USB", "Antena"], "a": 1}, {"k": "t", "a": ["100"]}, {"k": "t", "a": ["100"]}, {"k": "s", "o": ["Coure Coaxial (fi)", "Coure Coaxial (ample)", "Coure Trenat (UTP cat 5 min)", "Coure Trenat (UTP cat 6 min)", "Fibra multimode", "Fibra monomode"], "a": 3}, {"k": "s", "o": ["BNC", "RJ-45", "RJ-11", "SC suscriber", "USB", "Antena"], "a": 1}, {"k": "t", "a": ["100"]}, {"k": "t", "a": ["1000"]}, {"k": "s", "o": ["Coure Coaxial (fi)", "Coure Coaxial (ample)", "Coure Trenat (UTP cat 5 min)", "Coure Trenat (UTP cat 6 min)", "Fibra multimode", "Fibra monomode"], "a": 4}, {"k": "s", "o": ["BNC", "RJ-45", "RJ-11", "SC suscriber", "USB", "SX lucent"], "a": 3}, {"k": "t", "a": ["550"]}, {"k": "t", "a": ["1000"]}], "e": "1000Base-SX (fibra multimode) arriba fins a 550 m."}, {"id": "xl-u1q14", "q": "LAN / MAN / WAN / VPN", "h": "<p>Internet és una {{0}}</p>\n<p>El cable que connecta el meu ordinador amb l'equip que m'ha proporcionat Orange a casa forma part de la meva {{1}}</p>\n<p>Una {{2}} es pot utilitzar per crear un tunel segur a través d'una xarxa {{3}} des del teu ordinador personal fins a la xarxa {{4}} de la teva empresa.</p>", "p": [{"k": "s", "o": ["WAN", "LAN", "MAN", "VPN"], "a": 0}, {"k": "s", "o": ["WAN", "LAN", "MAN", "VPN"], "a": 1}, {"k": "s", "o": ["WAN", "LAN", "MAN", "VPN"], "a": 3}, {"k": "s", "o": ["WAN", "LAN", "MAN", "VPN"], "a": 0}, {"k": "s", "o": ["WAN", "LAN", "MAN", "VPN"], "a": 1}]}, {"id": "xl-u1q15", "q": "Definicions", "h": "<p>{{0}} és la fusió o l’ús de {{1}} i {{2}}.</p>", "p": [{"k": "s", "o": ["La telemàtica", "les telecomunicacions", "la informàtica"], "a": 0}, {"k": "s", "o": ["La telemàtica", "les telecomunicacions", "la informàtica"], "a": [2, 1]}, {"k": "s", "o": ["La telemàtica", "les telecomunicacions", "la informàtica"], "a": [2, 1]}]}, {"id": "xl-u1q16", "q": "Característiques de les SAN", "h": "<p>{{0}}: les SAN permeten l’accés concurrent de matrius de disc o cinta per dos o més servidors a alta velocitat, proporcionant un millor rendiment del sistema.</p>\n<p>{{1}}: les SAN tenen una tolerància incorporada als desastres, ja que es pot fer una còpia exacta de les dades mitjançant una SAN fins a una distància de 10 km o 6,2 milles.</p>\n<p id=\"yui_3_13_0_2_1424770592903_94\">{{2}}: igual que una XAL/WAN, pot usar una gamma àmplia de tecnologies. Això permet una reubicació fàcil de dades de còpia de seguretat, operacions, migració d’arxius, i duplicació de dades entre sistemes.</p>", "p": [{"k": "s", "o": ["Alt Rendiment", "Disponibilitat", "Escalabilitat"], "a": 0}, {"k": "s", "o": ["Alt Rendiment", "Disponibilitat", "Escalabilitat"], "a": 1}, {"k": "s", "o": ["Alt Rendiment", "Disponibilitat", "Escalabilitat"], "a": 2}]}, {"id": "xl-u1q17", "q": "Topologia lògica i física", "h": "<p>Quines de les següents informacions es poden visualitzar als esquemes de topologia Física o Lògica?</p>\n<p>Adreces IP dels equips: {{0}}<br />Distribució del cablatge: {{1}}<br />Switchos: {{2}}<br />Identificació de les diferents xarxes: {{3}}<br />Identificació de les connexions dels equips entre ells punt-a-punt: {{4}}<br />Ubicació dels equips a l'edifici: {{5}}</p>", "p": [{"k": "s", "o": ["Física", "Lògica", "Ambdues", "Cap"], "a": 1}, {"k": "s", "o": ["Física", "Lògica", "Ambdues", "Cap"], "a": 0}, {"k": "s", "o": ["Física", "Lògica", "Ambdues", "Cap"], "a": 0}, {"k": "s", "o": ["Física", "Lògica", "Ambdues", "Cap"], "a": 2}, {"k": "s", "o": ["Física", "Lògica", "Ambdues", "Cap"], "a": 0}, {"k": "s", "o": ["Física", "Lògica", "Ambdues", "Cap"], "a": 0}], "e": "Els switchos es representen a la topologia física."}, {"id": "xl-u1q18", "q": "Xarxes Client-Servidor i P2P", "h": "<p>Quins dels següents serveis utilitzen xarxes Client-Servidor i quins Igual-a-Igual?</p>\n<p>Emule: {{0}}<br />Web: {{1}}<br />Bit-Torrent: {{2}}<br />Correu electrònic: {{3}}</p>", "p": [{"k": "s", "o": ["Igual-a-Igual", "Client-Servidor", "Ambdues", "Cap"], "a": 0}, {"k": "s", "o": ["Igual-a-Igual", "Client-Servidor", "Ambdues", "Cap"], "a": 1}, {"k": "s", "o": ["Igual-a-Igual", "Client-Servidor", "Ambdues", "Cap"], "a": 0}, {"k": "s", "o": ["Igual-a-Igual", "Client-Servidor", "Ambdues", "Cap"], "a": 1}]}]},
 {n:"Unitat 2 - Desplegament de xarxes d'àrea local i protocols de comunicació. Normes de seguretat i riscos laborals",qs:[
@@ -281,10 +669,164 @@ var SUBJECTS=[{n:'IPO II',units:[
   "a": 1,
   "e": "Recorda que les rejibands al terra tècnic han de passar per sota les portes (no per sota parets) i evitar les diagonals al terra."
 }
+]},
+
+{n:"Unitat 3 - Model OSI, protocols de xarxa i adreçament IPv4",qs:[
+
+// --- PREGUNTA 1, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac31q1", "q": "El protocol POP3 té assignat un port...", "o": ["Registrat", "Conegut", "Privat"], "a": 1, "e": "POP3 utilitza el port 110, que està dins del rang de ports coneguts (0–1023)."},
+
+// --- PREGUNTA 2, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac31q2", "q": "En quina capa del model OSI funcionen les VLANs?", "o": ["Transport", "Aplicació", "Enllaç de Dades"], "a": 2, "e": "Les VLANs segmenten el domini de broadcast als commutadors, que treballen a la capa 2 (Enllaç de Dades)."},
+
+// --- PREGUNTA 3, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac31q3", "q": "Amb quina capa del model OSI relacionaries un concentrador?", "o": ["Enllaç", "Física", "Xarxa"], "a": 1, "e": "Un concentrador (hub) només regenera i repeteix el senyal elèctric: capa 1 (Física)."},
+
+// --- PREGUNTA 4, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac31q4", "q": "Quin protocol de la capa de transport faríem servir si necessitem fiabilitat?", "o": ["UDP", "IP", "TCP"], "a": 2, "e": "TCP és orientat a connexió i ofereix confirmacions i retransmissions; UDP no és fiable i IP és de capa de xarxa."},
+
+// --- PREGUNTA 5, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac31q5", "q": "Quins tipus de col·lisió poden detectar-se per una FCS errònia ?", "o": ["Local i remota", "Endarrerida", "Remota i endarrerida"], "a": 2, "e": "Les col·lisions remotes i les endarrerides (late) es detecten al receptor perquè la trama arriba amb la FCS errònia."},
+
+// --- PREGUNTA 6, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac31q6", "q": "Amb quina capa del model OSI relacionaries l'adreça IP?", "o": ["Xarxa", "Transport", "Enllaç"], "a": 0, "e": "L'adreça IP és l'adreça lògica de la capa 3 (Xarxa)."},
+
+// --- PREGUNTA 7, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac31q7", "q": "Quin és el propòsit principal de la capa de xarxa?", "o": ["Rutejar paquets entre xarxes", "Xifratge de dades", "Control de flux de dades"], "a": 0},
+
+// --- PREGUNTA 8, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac31q8", "q": "Quin és el propòsit dels ports efímers?", "o": ["Comunicacions segures", "Resolució de noms de domini", "Comunicacions temporals"], "a": 2, "e": "Els ports efímers els assigna el sistema operatiu al client de manera temporal durant una comunicació."},
+
+// --- PREGUNTA 9, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac31q9", "q": "L'adreça 192.168.10.255 és una adreça de…?", "o": ["Unicast", "Multicast", "Broadcast"], "a": 2, "e": "Amb la màscara habitual d'una classe C (/24), el darrer octet a 255 és l'adreça de broadcast de la xarxa."},
+
+// --- PREGUNTA 10, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac31q10", "q": "Quin protocol ens permet descobrir la IP a partir de l'adreça MAC?", "o": ["ARP", "CSMA/CD", "RARP"], "a": 2, "e": "RARP fa el camí invers d'ARP: a partir de la MAC obté la IP."},
+
+// --- PREGUNTA 11, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac31q11", "q": "Quina és la màxima longitud d'un càble Ethernet cat 5?", "o": ["200 metres", "100 metres", "50 metres"], "a": 1},
+
+// --- PREGUNTA 12, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac31q12", "q": "50.000 és un port...", "o": ["Coneguts", "Registrats", "Dinàmics"], "a": 2, "e": "Coneguts: 0–1023 · Registrats: 1024–49151 · Dinàmics/privats: 49152–65535."},
+
+// --- PREGUNTA 13, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac31q13", "q": "10.000 és un port...", "o": ["Registrats", "Dinàmics", "Coneguts"], "a": 0, "e": "Coneguts: 0–1023 · Registrats: 1024–49151 · Dinàmics/privats: 49152–65535."},
+
+// --- PREGUNTA 14, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac31q14", "q": "Relaciona les següents ordres o comandes amb les seves funcions", "h": "<p>Relaciona les següents ordres o comandes amb les seves funcions:</p><table><tr><td>arp -a</td><td>{{0}}</td></tr><tr><td>ipconfig /renew</td><td>{{1}}</td></tr><tr><td>ipconfig /release</td><td>{{2}}</td></tr><tr><td>ping</td><td>{{3}}</td></tr><tr><td>traceroute</td><td>{{4}}</td></tr><tr><td>netstat</td><td>{{5}}</td></tr><tr><td>ifconfig</td><td>{{6}}</td></tr><tr><td>ipconfig</td><td>{{7}}</td></tr></table>", "p": [{"k": "s", "o": ["Conèixer la ruta que segueix un paquet fins a la seva destinació en GNU/Linux", "Alliberar l'adreça IP pròpia en Windows", "Veure les connexions TCP/IP establertes", "Conèixer l'adreça IP pròpia en Windows", "Visualitzar la taula amb IPs i MACs associades", "Comprovar connectivitat entre dos hosts", "Conèixer les adreces IP i MAC pròpies en GNU/Linux", "Demanar una nova adreça IP en Windows"], "a": 4}, {"k": "s", "o": ["Conèixer la ruta que segueix un paquet fins a la seva destinació en GNU/Linux", "Alliberar l'adreça IP pròpia en Windows", "Veure les connexions TCP/IP establertes", "Conèixer l'adreça IP pròpia en Windows", "Visualitzar la taula amb IPs i MACs associades", "Comprovar connectivitat entre dos hosts", "Conèixer les adreces IP i MAC pròpies en GNU/Linux", "Demanar una nova adreça IP en Windows"], "a": 7}, {"k": "s", "o": ["Conèixer la ruta que segueix un paquet fins a la seva destinació en GNU/Linux", "Alliberar l'adreça IP pròpia en Windows", "Veure les connexions TCP/IP establertes", "Conèixer l'adreça IP pròpia en Windows", "Visualitzar la taula amb IPs i MACs associades", "Comprovar connectivitat entre dos hosts", "Conèixer les adreces IP i MAC pròpies en GNU/Linux", "Demanar una nova adreça IP en Windows"], "a": 1}, {"k": "s", "o": ["Conèixer la ruta que segueix un paquet fins a la seva destinació en GNU/Linux", "Alliberar l'adreça IP pròpia en Windows", "Veure les connexions TCP/IP establertes", "Conèixer l'adreça IP pròpia en Windows", "Visualitzar la taula amb IPs i MACs associades", "Comprovar connectivitat entre dos hosts", "Conèixer les adreces IP i MAC pròpies en GNU/Linux", "Demanar una nova adreça IP en Windows"], "a": 5}, {"k": "s", "o": ["Conèixer la ruta que segueix un paquet fins a la seva destinació en GNU/Linux", "Alliberar l'adreça IP pròpia en Windows", "Veure les connexions TCP/IP establertes", "Conèixer l'adreça IP pròpia en Windows", "Visualitzar la taula amb IPs i MACs associades", "Comprovar connectivitat entre dos hosts", "Conèixer les adreces IP i MAC pròpies en GNU/Linux", "Demanar una nova adreça IP en Windows"], "a": 0}, {"k": "s", "o": ["Conèixer la ruta que segueix un paquet fins a la seva destinació en GNU/Linux", "Alliberar l'adreça IP pròpia en Windows", "Veure les connexions TCP/IP establertes", "Conèixer l'adreça IP pròpia en Windows", "Visualitzar la taula amb IPs i MACs associades", "Comprovar connectivitat entre dos hosts", "Conèixer les adreces IP i MAC pròpies en GNU/Linux", "Demanar una nova adreça IP en Windows"], "a": 2}, {"k": "s", "o": ["Conèixer la ruta que segueix un paquet fins a la seva destinació en GNU/Linux", "Alliberar l'adreça IP pròpia en Windows", "Veure les connexions TCP/IP establertes", "Conèixer l'adreça IP pròpia en Windows", "Visualitzar la taula amb IPs i MACs associades", "Comprovar connectivitat entre dos hosts", "Conèixer les adreces IP i MAC pròpies en GNU/Linux", "Demanar una nova adreça IP en Windows"], "a": 6}, {"k": "s", "o": ["Conèixer la ruta que segueix un paquet fins a la seva destinació en GNU/Linux", "Alliberar l'adreça IP pròpia en Windows", "Veure les connexions TCP/IP establertes", "Conèixer l'adreça IP pròpia en Windows", "Visualitzar la taula amb IPs i MACs associades", "Comprovar connectivitat entre dos hosts", "Conèixer les adreces IP i MAC pròpies en GNU/Linux", "Demanar una nova adreça IP en Windows"], "a": 3}]},
+
+// --- PREGUNTA 15, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac31q15", "q": "L'adreça IPv6 està formada per:", "o": ["128 bits", "32 bits", "48 bits"], "a": 0},
+
+// --- PREGUNTA 16, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac31q16", "q": "Quin és el rang d'adreces IP privades en la classe C?", "o": ["192.168.0.0 - 192.168.255.255", "10.0.0.0 - 10.255.255.255", "172.16.0.0 - 172.31.255.255"], "a": 0, "e": "10.0.0.0/8 és la classe A privada, 172.16.0.0–172.31.255.255 la B i 192.168.0.0/16 la C."},
+
+// --- PREGUNTA 17, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac31q17", "q": "Quin protocol es fa servir per transferir arxius entre ordinadors?", "o": ["HTTP", "SMTP", "FTP"], "a": 2},
+
+// --- PREGUNTA 18, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac31q18", "q": "Quina de les següents afirmacions és falsa?", "o": ["Finestra lliscant i stop-and-wait són dos mètodes de control de flux", "Finestra lliscant confirma un nombre fix de paquets", "Stop-and-wait confirma els paquets d'un en un i això no és eficient"], "a": 1},
+
+// --- PREGUNTA 19, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac31q19", "q": "Si una empresa vol connectar-se amb l’exterior fent servir només una IP pública farà servir...?", "o": ["NAT estàtic", "PAT", "NAT dinàmic"], "a": 1, "e": "PAT (NAT amb sobrecàrrega) permet que moltes IPs privades surtin amb una sola IP pública diferenciant-les per port."},
+
+// --- PREGUNTA 20, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac31q20", "q": "Amb quina capa del model OSI cal relacionar una VLAN?", "o": ["Xarxa", "Física", "Enllaç"], "a": 2},
+
+// --- PREGUNTA 21, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac32q1", "q": "Quina de les següents és l'adreça de xarxa a la qual pertany la IP 222.21.2.130/25?", "o": ["222.21.2.128", "222.21.2.0", "222.21.2.1", "222.21.2.192"], "a": 0, "e": "Amb /25 els blocs són de 128 adreces: 0–127 i 128–255. El 130 és al bloc que comença a 128."},
+
+// --- PREGUNTA 22, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac32q2", "q": "De quina classe és l'adreça 192.168.1.1?", "o": ["Classe B", "Classe C", "Classe A"], "a": 1, "e": "Classe A: 1–126 · B: 128–191 · C: 192–223 · D: 224–239."},
+
+// --- PREGUNTA 23, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac32q3", "q": "255.255.255.0 en notació CIDR:", "o": ["/3", "/8", "/16", "/24"], "a": 3, "e": "3 octets a 255 = 24 bits a 1."},
+
+// --- PREGUNTA 24, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac32q4", "q": "200.34.96.254/24 és una adreça de...", "o": ["Host", "Xarxa", "Broadcast"], "a": 0, "e": "Amb /24, .0 és la xarxa i .255 el broadcast; .254 és un host."},
+
+// --- PREGUNTA 25, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac32q5", "q": "De quina classe és l'adreça 9.255.255.255?", "o": ["Classe B", "Classe C", "Classe A"], "a": 2, "e": "El primer octet (9) és entre 1 i 126: classe A."},
+
+// --- PREGUNTA 26, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac32q6", "q": "De quina classe és l'adreça 53.248.21.0?", "o": ["A", "C", "D", "B"], "a": 0, "e": "El primer octet (53) és entre 1 i 126: classe A."},
+
+// --- PREGUNTA 27, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac32q7", "q": "De quina classe és l'adreça 212.127.1.0?", "o": ["Clase A", "Clase D", "Clase B", "Clase C"], "a": 3, "e": "El primer octet (212) és entre 192 i 223: classe C."},
+
+// --- PREGUNTA 28, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac32q8", "q": "Quina és la notació CIDR per a la màscara de xarxa 255.255.255.252?", "o": ["/30", "/29", "/32", "/31"], "a": 0, "e": "252 = 11111100 → 6 bits a 1 al darrer octet: 24 + 6 = 30."},
+
+// --- PREGUNTA 29, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac32q9", "q": "L'adreça 4.223.222.221 es de clase", "o": ["C", "D", "B", "A"], "a": 3, "e": "El primer octet (4) és entre 1 i 126: classe A."},
+
+// --- PREGUNTA 30, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac32q10", "q": "255.255.192.0 en notació CIDR:", "o": ["No existe", "/16", "/20", "/18"], "a": 3, "e": "192 = 11000000 → 2 bits a 1 al tercer octet: 16 + 2 = 18."},
+
+// --- PREGUNTA 31, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac32q11", "q": "Quants bits té una direcció IPv4?", "o": ["14", "128", "16", "32"], "a": 3},
+
+// --- PREGUNTA 32, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac32q12", "q": "Quina és la notació CIDR per a la màscara de xarxa 255.255.255.224?", "o": ["/25", "/27", "/26", "/28"], "a": 1, "e": "224 = 11100000 → 3 bits a 1 al darrer octet: 24 + 3 = 27."},
+
+// --- PREGUNTA 33, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac32q13", "q": "Quina de les següents és l'adreça de broadcast a la qual pertany aquesta IP 8.8.5.5/8?", "o": ["8.8.255.255", "8.255.255.255", "8.127.255.255"], "a": 1, "e": "Amb /8 només es fixa el primer octet; tots els bits de host a 1 donen 8.255.255.255."},
+
+// --- PREGUNTA 34, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac32q14", "q": "Quina és la notació CIDR per a la màscara de xarxa 255.255.252.0?", "o": ["/21", "/24", "/22", "/23"], "a": 2, "e": "252 = 11111100 → 6 bits a 1 al tercer octet: 16 + 6 = 22."},
+
+// --- PREGUNTA 35, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac32q15", "q": "La IP 203.0.113.5, pertany a la Xarxa 203.0.113.0/26?", "o": ["True", "False"], "a": 0, "e": "/26 → blocs de 64 adreces. La xarxa 203.0.113.0/26 va del .0 al .63, i el .5 hi és."},
+
+// --- PREGUNTA 36, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac32q16", "q": "Número de hosts que es poden direccionar amb 8 bits", "o": ["8", "16", "255", "254"], "a": 3, "e": "2^8 − 2 = 254 (es resten l'adreça de xarxa i la de broadcast)."},
+
+// --- PREGUNTA 37, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac32q17", "q": "Quina és la notació CIDR per a la màscara de xarxa 255.255.0.0?", "o": ["/16", "/8", "/24", "/32"], "a": 0},
+
+// --- PREGUNTA 38, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac32q18", "q": "Quantes adreces possibles té l'adreçament IPv4?", "o": ["2^16", "2^32", "2^24", "2^128"], "a": 1},
+
+// --- PREGUNTA 39, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac32q19", "q": "210.65.4.0/24 és una adreça de...", "o": ["Xarxa", "Broadcast", "Host"], "a": 0, "e": "Amb /24, el darrer octet a 0 és l'adreça de xarxa."},
+
+// --- PREGUNTA 40, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac32q20", "q": "De quina classe és l'adreça 172.16.0.0?", "o": ["Clase A", "Clase B", "Clase D", "Clase C"], "a": 1, "e": "El primer octet (172) és entre 128 i 191: classe B."},
+
+// --- PREGUNTA 41, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac32q21", "q": "La IP 140.112.174.32, pertany a la Xarxa 140.112.160.0/20?", "o": ["False", "True"], "a": 1, "e": "/20 → blocs de 16 al tercer octet. La xarxa 160.0/20 va del 160 al 175, i el 174 hi és."},
+
+// --- PREGUNTA 42, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac32q22", "q": "A quina xarxa pertany la IP 67.25.12.133/26?", "o": ["67.25.12.0/24", "67.25.12.128/26", "67.25.12.0/26", "67.25.12.192/26"], "a": 1, "e": "/26 → blocs de 64: 0, 64, 128, 192. El 133 és al bloc que comença al 128."},
+
+// --- PREGUNTA 43, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac32q23", "q": "145.9.0.255/16 és una adreça de...", "o": ["Xarxa", "Host", "Broadcast"], "a": 1, "e": "Amb /16 el broadcast és 145.9.255.255; 145.9.0.255 és un host."},
+
+// --- PREGUNTA 44, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac32q24", "q": "La IP 172.31.100.5, pertany a la Xarxa 172.31.96.0/20?", "o": ["False", "True"], "a": 1, "e": "/20 → blocs de 16 al tercer octet. La xarxa 96.0/20 va del 96 al 111, i el 100 hi és."},
+
+// --- PREGUNTA 45, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac32q25", "q": "De quina classe és l'adreça 203.0.113.0?", "o": ["Classe C", "Classe A", "Classe B"], "a": 0, "e": "El primer octet (203) és entre 192 i 223: classe C."},
+
+// --- PREGUNTA 46, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac32q26", "q": "130.25.0.0/16 és una adreça de...", "o": ["Host", "Broadcast", "Xarxa"], "a": 2, "e": "Amb /16, els dos darrers octets a 0 són l'adreça de xarxa."},
+
+// --- PREGUNTA 47, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac32q27", "q": "255.255.255.254 en notació CIDR:", "o": ["No existe", "/8", "/28", "/18"], "a": 0, "e": "255.255.255.254 correspondria a /31, que no apareix entre les opcions."},
+
+// --- PREGUNTA 48, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac32q28", "q": "De quina classe és l'adreça 191.255.255.255?", "o": ["Classe B", "Classe C", "Classe A"], "a": 0, "e": "El primer octet (191) és entre 128 i 191: classe B."},
+
+// --- PREGUNTA 49, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac32q29", "q": "Amb quina màscara es correspon /23?", "o": ["255.255.254.0", "255.255.255.192", "255.255.252.0", "255.255.255.0"], "a": 0, "e": "/23 = 16 + 7 bits → tercer octet 11111110 = 254."},
+
+// --- PREGUNTA 50, UNITAT 3, XARXES LOCALS ---
+{"id": "xl-eac32q30", "q": "La IP 10.10.10.10, pertany a la Xarxa 10.10.10.0/24?", "o": ["False", "True"], "a": 1}
 ]}
 ]}
 ];
 var BANKS=[];SUBJECTS.forEach(function(su){su.units.forEach(function(u){u.s=su.n;BANKS.push(u)})});
+
 // ====== ESTAT I EMMAGATZEMATGE ======
 var cfg={sub:'all',unit:'all',mode:'study',rnd:true};var KEY='errorsBank_v2',S={},app=document.getElementById('app');
 function ld(){try{return JSON.parse(localStorage.getItem(KEY))||[]}catch(e){return []}}
@@ -459,5 +1001,91 @@ function bindTools(back){
   document.getElementById('im').onclick=function(){imp(jx.value)};
   document.getElementById('fl').onchange=function(){var f=this.files[0];if(!f)return;var r=new FileReader();r.onload=function(){imp(r.result)};r.readAsText(f)};
 }
+
+// ====== PAUSES MÚLTIPLES: Aquest bloc de codi permet pausar els test sense límit, i poder tenir diversos pausats (en el test pausat es pot veure de quina materia és, la unitat, el tipus de test, el mode d'estudi, quantes respostes tinc contestades i quin dia l'he pausat)  
+var SKEY2='quizSessions_v2';
+function ssv(a){try{localStorage.setItem(SKEY2,JSON.stringify(a))}catch(e){}}
+function sall(){
+  try{var a=JSON.parse(localStorage.getItem(SKEY2));if(Array.isArray(a))return a}catch(e){}
+  var o=null;try{o=JSON.parse(localStorage.getItem(SKEY))}catch(e){}
+  if(o&&o.it){
+    o.sid='s'+Date.now();o.ts=Date.now();
+    try{localStorage.removeItem(SKEY)}catch(e){}
+    ssv([o]);return [o];
+  }
+  return [];
+}
+function newSid(){return 's'+Date.now()+Math.random().toString(36).slice(2,6)}
+function save(){
+  var a=sall();
+  var d={sid:S.sid,ts:Date.now(),r:S.review,m:S.mode,i:S.i,el:elapsed()};
+  d.it=S.items.map(function(x){return {id:x.q.id,o:x.o,s:x.sel,d:x.dec}});
+  var k=a.map(function(x){return x.sid}).indexOf(S.sid);
+  if(k<0)a.push(d);else a[k]=d;
+  ssv(a);
+}
+function clr(id){
+  id=id||S.sid;
+  ssv(sall().filter(function(x){return x.sid!==id}));
+}
+function sesAll(){
+  return sall().map(function(d){
+    d.it=d.it.filter(function(x){return byId(x.id)});
+    return d;
+  }).filter(function(d){return d.it.length}).sort(function(a,b){return b.ts-a.ts});
+}
+function ses(){var l=sesAll();return l.length?{all:l}:null}
+function resume(sid){
+  var d=sesAll().filter(function(x){return x.sid===sid})[0];
+  if(!d)return;
+  S={sid:d.sid,i:Math.min(d.i,d.it.length-1),review:d.r,mode:d.m,el:d.el,t0:Date.now()};
+  S.items=d.it.map(function(x){return {q:byId(x.id),o:x.o,sel:x.s,dec:x.d}});
+  show();
+}
+function newT(b,qs,rev){start(qs,rev)}
+function start(qs,review){
+  if(!qs.length)return;
+  var l=cfg.rnd?shuf(qs):qs.slice();
+  S={sid:newSid(),i:0,review:review,mode:cfg.mode,el:0,t0:Date.now()};
+  S.items=l.map(function(q){
+    var o=(q.o||[]).map(function(_,i){return i});
+    return {q:q,o:cfg.rnd?shuf(o):o,sel:-1,dec:0};
+  });
+  save();show();
+}
+function bankOf(id){
+  return BANKS.filter(function(b){return b.qs.some(function(q){return q.id===id})})[0];
+}
+function card1(d){
+  var n=d.it.filter(function(x){return dn(x.s)}).length,subs=[],units=[];
+  d.it.forEach(function(x){
+    var b=bankOf(x.id);if(!b)return;
+    if(subs.indexOf(b.s)<0)subs.push(b.s);
+    var u=b.s+' › '+b.n;if(units.indexOf(u)<0)units.push(u);
+  });
+  var dt=new Date(d.ts||Date.now()),p2=function(x){return ('0'+x).slice(-2)};
+  var when=p2(dt.getDate())+'/'+p2(dt.getMonth()+1)+' '+p2(dt.getHours())+':'+p2(dt.getMinutes());
+  var ul=units.map(function(u){
+    return subs.length==1?u.slice(subs[0].length+3):u;
+  }).join('<br>');
+  var info=(d.r?'Carpeta d’errors':'Test normal')+' · ';
+  info+=(d.m=='exam'?'Mode Examen':'Mode Estudi')+' · ';
+  info+=n+' de '+d.it.length+' respostes · Pausat el '+when;
+  var h='<div class="card"><h2>⏸ Test en pausa</h2>';
+  h+='<div><b>Matèria:</b> '+subs.join(', ')+'</div>';
+  h+='<div><b>Unitat'+(units.length>1?'s':'')+':</b> '+ul+'</div>';
+  h+='<div class="mu" style="margin-top:6px">'+info+'</div>';
+  h+='<div class="row"><button class="p rs" data-sid="'+d.sid+'">Continuar</button>';
+  h+='<button class="ds" data-sid="'+d.sid+'">Descartar</button></div></div>';
+  return h;
+}
+function pausedCard(d){return (d&&d.all?d.all:[d]).map(card1).join('')}
+app.addEventListener('click',function(e){
+  var b=e.target.closest?e.target.closest('button[data-sid]'):null;
+  if(!b)return;
+  var sid=b.dataset.sid;
+  if(b.classList.contains('rs')){resume(sid)}
+  else if(b.classList.contains('ds')){sure(b,function(){clr(sid);home()})}
+});
 home();
 </script></body></html>
